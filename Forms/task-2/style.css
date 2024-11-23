@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid #ccc;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.form__field {
+    display: flex;
+    gap: 5px;
+}
+
+.form__btn {
+    align-self: flex-start;
+}
+
+.form__blocker-required--name,
+.form__blocker-required--weight,
+.form__blocker-required--distance,
+.form__blocker-invalid-input {
+    display: none;
+    color: #FBABAB;
+}
+
+.active {
+    display: block;
+}

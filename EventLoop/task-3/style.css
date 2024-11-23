@@ -1,0 +1,8 @@
+#barcat,
+#bardog {
+    width: 500px;
+    height: 20px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background-color: #2461e6;
+}

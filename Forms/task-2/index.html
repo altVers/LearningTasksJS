@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="form" action="#" method="post">
+        <div class="form__field">
+            <label class="form__label" for="name">Название товара:</label>
+            <input class="form__input" type="text" id="name">
+            <span class="form__blocker-required--name">Заполните это поле</span>
+        </div>
+        <div class="form__field">
+            <label class="form__label" for="weight">Вес товара (кг):</label>
+            <input class="form__input" type="number" id="weight">
+            <span class="form__blocker-required--weight">Заполните это поле</span>
+        </div>
+        <div class="form__field">
+            <label class="form__label" for="distance">Расстояние доставки (км):</label>
+            <input class="form__input" type="number" id="distance">
+            <span class="form__blocker-required--distance">Заполните это поле</span>
+        </div>
+        <span class="form__blocker-invalid-input">Введите корректное значение для расстояния и веса</span>
+        <button class="form__btn" type="submit">Добавить товар</button>
+    </form>
+    <table class="product-table">
+        <thead>
+            <tr>
+                <th>Название товара</th>
+                <th>Вес (кг)</th>
+                <th>Расстояние (км)</th>
+                <th>Стоимость доставки</th>
+            </tr>
+        </thead>
+        <tbody class="table__body">
+            <!-- Здесь будут добавляться товары -->
+        </tbody>
+    </table>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

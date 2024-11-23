@@ -1,0 +1,39 @@
+body {
+    background-color: #CECECE;
+  }
+  
+  .card {
+    display: none;
+    align-items: center;
+    gap: 20px;
+    width: 300px;
+    height: 100px;
+    padding: 30px;
+    background-color: #FFFFFF;
+  }
+
+  .card--active {
+    display: flex;
+  }
+
+  .card__text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card__text {
+    font-weight: bold;
+    font-size: 17px;
+  }
+
+  .card__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    padding: 10px;
+    background-color: #83cfec;
+    border-radius: 10px;
+    border: none;
+  }

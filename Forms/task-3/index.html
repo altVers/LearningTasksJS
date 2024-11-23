@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="form" action="#" method="post">
+        <div class="form__wrapper">
+            <label class="form__label" for="card-text">Введите Ваше имя и фамилию:</label>
+            <input class="form__input" type="text" id="card-text">
+        </div>
+        <div class="form__wrapper">
+            <label class="form__label" for="color">Выберите цвет оформления:</label>
+            <select class="form__select" name="color" id="color">
+                <option class="form__select-option" value="#BC0000">Красный</option>
+                <option class="form__select-option" value="#00457E" selected>Синий</option>
+                <option class="form__select-option" value="#778D45">Зеленый</option>
+            </select>
+        </div>
+    </form>
+    <div class="card">
+        <span class="card__holder">card holder</span>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

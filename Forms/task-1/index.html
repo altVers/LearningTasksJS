@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <form class="form" action="#" method="post">
+        <h1 class="form__title">Форма опроса</h1>
+        <fieldset class="form__wrapper">
+            <label class="form__span" for="name">Имя пользователя:</label>
+            <input class="form__input" type="text" name="name" id="name">
+            <span class="form__alert-required--name">Заполните поле с именем</span>
+        </fieldset>
+        <fieldset class="form__wrapper">
+            <label class="form__span" for="email">Email:</label>
+            <input class="form__input" type="email" name="email" id="email">
+            <span class="form__alert-required--email">Заполните поле с почтой</span>
+            <span class="form__alert-invalid--email">Неверный формат почты</span>
+        </fieldset>
+        <fieldset class="form__wrapper">
+            <span class="form__field-descr">Пол:</span>
+            <input class="form__radio" type="radio" name="sex" id="sex-M" value="Мужской">
+            <label class="form__label" for="sex-M">Мужской</label>
+            <input class="form__radio" type="radio" name="sex" id="sex-W" value="Женский">
+            <label class="form__label" for="sex-W">Женский</label>
+        </fieldset>
+        <fieldset class="form__wrapper">
+            <label class="form__label" for="rate">Оценка сервиса:</label>
+            <input class="form__range" type="range" name="rate" id="rate" max="10" step="1">
+        </fieldset>
+        <fieldset class="form__wrapper form__wrapper--col">
+            <legend class="form__field-descr">Интересы пользователя:</legend>
+            <div class="form__checkbox-wrapper">
+                <input class="form__checkbox" type="checkbox" name="sport" id="sport" value="Спорт">
+                <label class="form__label" for="sport">Спорт</label>
+            </div>
+            <div class="form__checkbox-wrapper">
+                <input class="form__checkbox" type="checkbox" name="music" id="music" value="Музыка">
+                <label class="form__label" for="music">Музыка</label>
+            </div>
+            <div class="form__checkbox-wrapper">
+                <input class="form__checkbox" type="checkbox" name="adventures" id="adventures" value="Путешествия">
+                <label class="form__label" for="adventures">Путешествия</label>
+            </div>
+            <div class="form__checkbox-wrapper">
+                <input class="form__checkbox" type="checkbox" name="films" id="films" value="Кино">
+                <label class="form__label" for="films">Кино</label>
+            </div>
+        </fieldset>
+        <fieldset class="form__wrapper form__wrapper--col">
+            <legend class="form__field-descr" for="comments">Дополнительные комментарии:</legend>
+            <textarea class="form__textarea" name="comments" id="comments"></textarea>
+        </fieldset>
+        <button class="form__btn" type="submit">Отправить</button>
+        <div class="results"></div>
+    </form>
+    <script src="index.js"></script>
+</body>
+
+</html>

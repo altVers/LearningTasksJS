@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>Document</title>
+</head>
+<body>
+  <form id="film-form">
+    <div class="film-form__input-wrapper">
+      <label for="title">Название:</label><br />
+    <input type="text" id="title" name="title" /><br />
+    </div>
+    <div class="film-form__input-wrapper">
+      <label for="genre">Жанр:</label><br />
+    <input type="text" id="genre" name="genre" /><br />
+    </div>
+    <div class="film-form__input-wrapper">
+      <label for="releaseYear">Год:</label><br />
+    <input type="text" id="releaseYear" name="releaseYear" /><br />
+    </div>
+    <div class="film-form__input-wrapper">
+      <input type="checkbox" id="isWatched" name="isWatched" />
+    <label for="isWatched">Успели посмотреть?</label><br />
+    </div>
+
+    <!-- <input type="submit" value="Submit"> -->
+    <button class="film-form__btn" type="submit">Добавить</button>
+    <button class="film-form__btn--update" type="submit">Обновить</button>
+    <button class="film-form__btn--cancel">Отменить редактирование</button>
+  </form>
+  <form id="sort-table">
+    <select id="sort-table__select">
+      <option value="titleEl">
+          Название
+      </option>
+      <option value="genreEl">
+          Жанр
+      </option>
+      <option value="releaseYearEl">
+          Год
+      </option>
+    </select>
+    <button id="sort-table-btn">Сортировать</button>
+  </form>
+  <table id="film-table">
+    <thead>
+      <tr>
+        <th>Название</th>
+        <th>Жанр</th>
+        <th>Год</th>
+        <th>Успели посмотреть?</th>
+        <th>Действие</th>
+      </tr>
+    </thead>
+    <tbody id="film-tbody">
+      <!-- Rows will be inserted here -->
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>

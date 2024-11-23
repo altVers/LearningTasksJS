@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cat-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .cat__image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+
+        .cat--big {
+            width: 100%;
+            display: none;
+        }
+
+        .active {
+            display: flex;
+        }
+
+        .cat--big .cat__image {
+            width: 600px;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="cat-list">
+        <li class="cat"><img class="cat__image" src="https://i.ibb.co/WFvbJfb/324ec1c4708f2697b3b5d748a2e302d8.jpg"
+                alt="small-image"></li>
+        <li class="cat"><img class="cat__image" src="https://i.ibb.co/HnrW5D7/710923eeb224fd3b9641d1797b3c9108.jpg"
+                alt="small-image"></li>
+        <li class="cat"><img class="cat__image" src="https://i.ibb.co/xY5hSG4/b8f5dc9ef79f3fcfc242cfa92e8d0c7d.jpg"
+                alt="small-image"></li>
+        <li class="cat cat--big"><img class="cat__image cat__image--big"
+                src="https://i.ibb.co/WFvbJfb/324ec1c4708f2697b3b5d748a2e302d8.jpg" alt="big-image"></li>
+    </ul>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+body {
+    
+    background-color: #e2e2e2;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    position: relative;
+    flex-grow: 1;
+}
+
+.app {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 30px;
+}
+
+.card__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid wheat;
+    box-shadow: 10px 10px 30px #bbbbbb;
+}
+
+.card__wrapper--delivery {
+    border: 2px solid green;
+}
+
+.card__wrapper--delivered {
+    background-color: #cee6d3;
+    opacity: 0.7;
+}
+
+.card__wrapper--canceled {
+    border: 2px solid rgb(218, 153, 153);
+    background-color: #d6d8d6;
+    opacity: 0.7;
+}
+
+.card__info-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card__tag {
+    color: #868686;
+}
+
+.card__title {
+    margin: 0;
+}
+
+.edit-card__wrapper {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 10px 10px 30px #bbbbbb;
+    z-index: 100;
+}
+
+.card-edit__title {
+    margin: 0 0 10px 0;
+}
+
+.edit-card__input {
+    min-width: 240px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.edit-card__select {
+    min-width: 240px;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.edit-card__save-btn {
+    padding: 10px;
+    background-color: rgb(190, 216, 190);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card__edit-btn {
+    cursor: pointer;
+    background-color: #f3e8ac;
+    border: 1px solid #ddcd6f;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.card__edit-btn:hover {
+    background-color: #f3e17e;
+}
+
+.edit-card__save-btn:hover {
+    opacity: 0.9;
+}
+
+.card-edit__close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.overlay {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.7);
+    z-index:1;
+}
+
+.count__wrapper {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+.count__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #748bd4;
+    padding: 8px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
